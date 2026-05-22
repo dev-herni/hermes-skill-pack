@@ -1,72 +1,86 @@
 # Hermes Agent Premium Skill Pack 🧠⚡
 
-**5 premium plug-and-play skills that turn Hermes Agent into a fully autonomous assistant.**
+**5 plug-and-play skills. One command. Your AI agent becomes truly autonomous.**
 
-[![MCP Hub](https://img.shields.io/badge/MCP-Hub-00D4FF)](https://mcp.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Dev--Herni-4ADE80)](https://github.com/Dev-Herni)
+[![GitHub Release](https://img.shields.io/github/v/release/Dev-Herni/hermes-skill-pack?color=4ADE80)](https://github.com/Dev-Herni/hermes-skill-pack/releases)
+[![License](https://img.shields.io/badge/License-MIT-00D4FF)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Dev-Herni/hermes-skill-pack?style=social)](https://github.com/Dev-Herni/hermes-skill-pack)
 
 ---
 
 ## 🚀 What You Get
 
-| Skill | Purpose | Tools Used |
-|-------|---------|------------|
-| **Smart Scheduler** | Auto-prioritizes and schedules tasks | cron, hermes gateway |
-| **Web Research Agent** | Deep web research with source synthesis | web_search, web_extract |
-| **GitHub Automation** | PRs, issues, releases, CI/CD | gh CLI, git |
-| **Daily Briefing** | Morning news + weather + crypto digest | cron, web, crypto |
-| **Content Writer** | Blog posts, social media, newsletters | claude, markdown |
+| Skill | What It Does | 
+|-------|-------------|
+| **🤖 Smart Scheduler** | Auto-prioritizes tasks, sets cron jobs, daily briefings |
+| **🔍 Web Research Agent** | Search → extract → summarize → save pipeline |
+| **🐙 GitHub Automation** | Auto-label issues, release notes, milestone sync |
+| **☀️ Daily Briefing** | Morning news + weather + crypto digest |
+| **✍️ Content Writer** | Draft → polish → publish (X, blog, newsletter) |
 
-## 🤖 How It Works
+**Zero API keys required.** Every skill uses Hermes' built-in tools. Works with Hermes Agent, Claude Code, OpenClaw, or any MCP-compatible client.
 
-Each skill is a complete `SKILL.md` file that Hermes loads on demand. No API keys, no extra services — just pure Hermes-native capabilities.
+## ⚡ Quick Install
+
+```bash
+# One-command install
+curl -fsSL https://raw.githubusercontent.com/Dev-Herni/hermes-skill-pack/main/install.sh | bash
+
+# Or manual
+gh repo clone Dev-Herni/hermes-skill-pack
+hermes skill load web-research-agent
+```
 
 ## 💰 Pricing
 
-| Option | Price | Payment |
-|--------|-------|---------|
-| **Single License** | 0.01 SOL (~$10) | Solana blockchain |
-| **Developer License** | 0.05 SOL (~$50) | Solana + Support |
-| **Commercial License** | 0.1 SOL (~$100) | Full rights + Setup |
+| License | Price | What You Get |
+|---------|-------|-------------|
+| **Personal** | **0.01 SOL** (~€7) | 5 skills, personal use, updates |
+| **Developer** | **0.05 SOL** (~€35) | Commercial use + priority support |
+| **Enterprise** | **0.1 SOL** (~€70) | Full rights + custom setup + 1h call |
 
-## 🔧 Quick Install
+**Pay with Solana:** Send SOL to [wallet address] and use the tx hash to download.
 
-```bash
-# 1. Load a skill
-hermes skill load web-research-agent
+## 🖥️ Need a Server for 24/7 Operation?
 
-# 2. Or install the full pack
-gh repo clone Dev-Herni/hermes-skill-pack ~/hermes-skill-pack
+These VPS providers work great for running AI agents around the clock:
 
-# 3. Set a cron job
-hermes cron create --schedule "0 8 * * *" --skill daily-briefing
-```
+- [DigitalOcean](https://www.digitalocean.com/?refcode=REF_CODE_HERE) — $6/mo starting, easy setup
+- [Vultr](https://www.vultr.com/?ref=REF_CODE_HERE) — $5/mo starting, worldwide datacenters
+- [Hetzner Cloud](https://hetzner.cloud/?ref=REF_CODE_HERE) — €4/mo starting, best value in EU
+
+*Using these links helps support development at no extra cost to you.*
+
+## 🔮 Roadmap
+
+- **$GATE Token** — Launching on Base Chain via Clanker. Token holders get skill discounts + revenue share.
+- **v2.0** — 10 skills, custom skill builder, visual editor
+- **MCP Hub Listing** — DeFAI Gateway integration
 
 ## 📦 Contents
 
 ```
 hermes-skill-pack/
-├── README.md
 ├── skills/
 │   ├── smart-scheduler/SKILL.md
 │   ├── web-research-agent/SKILL.md
 │   ├── github-automation/SKILL.md
 │   ├── daily-briefing/SKILL.md
 │   └── content-writer/SKILL.md
-└── license/
-    └── LICENSE.md
+├── install.sh
+└── LICENSE
 ```
 
 ## 🔐 Security
 
-- **No API keys required** — uses Hermes' built-in tools
-- **No external calls** — everything runs locally
-- **Auditable** — every skill is plain markdown, inspect before loading
+- **Open source** — inspect every skill before loading
+- **No telemetry** — everything runs locally
+- **Auditable** — plain markdown, nothing hidden
 
 ## 📬 Contact
 
-hermes-business@agentmail.to
+hermes-business@agentmail.to | [GitHub](https://github.com/Dev-Herni/hermes-skill-pack)
 
 ---
 
-*Built with Hermes Agent v0.14.0 — Your autonomous AI operator*
+*Built with Hermes Agent — Your autonomous AI operator*
