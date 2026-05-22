@@ -1,149 +1,72 @@
-# 🚀 Hermes Agent Premium Skill Pack
+# Hermes Agent Premium Skill Pack 🧠⚡
 
-> **Turn your AI agent into a fully autonomous assistant in 5 minutes.**
+**5 premium plug-and-play skills that turn Hermes Agent into a fully autonomous assistant.**
 
-[![GitHub Release](https://img.shields.io/github/v/release/Dev-Herni/hermes-skill-pack)](https://github.com/Dev-Herni/hermes-skill-pack/releases)
-[![License](https://img.shields.io/badge/license-Personal_Use-blue)](LICENSE)
-[![Price](https://img.shields.io/badge/price-0.05_SOL-brightgreen)](/#buy)
-
----
-
-## ✨ What You Get
-
-5 production-ready skills that **actually work** — no debugging, no tweaking, no "works on my machine."
-
-| Skill | What It Does | Why You Need It |
-|-------|-------------|-----------------|
-| **🤖 Smart Scheduler** | Cron automation with 3 templates | "Set it and forget it" — daily briefings, uptime checks, weekly digests |
-| **🔍 Web Research Agent** | Search → Extract → Summarize → Save | Full research pipeline in one prompt. Saves to your knowledge base |
-| **☀️ Daily Briefing** | Morning news + weather + calendar | Your personal AI newspaper, delivered automatically |
-| **🐙 GitHub Automation** | Auto-label, release notes, milestone sync | Stop triaging. Start shipping. |
-| **✍️ Content Writer** | Draft → Polish → Publish | X threads, blog posts, newsletters. One prompt, done. |
+[![MCP Hub](https://img.shields.io/badge/MCP-Hub-00D4FF)](https://mcp.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Dev--Herni-4ADE80)](https://github.com/Dev-Herni)
 
 ---
 
-## ⚡ Quick Install (30 seconds)
+## 🚀 What You Get
+
+| Skill | Purpose | Tools Used |
+|-------|---------|------------|
+| **Smart Scheduler** | Auto-prioritizes and schedules tasks | cron, hermes gateway |
+| **Web Research Agent** | Deep web research with source synthesis | web_search, web_extract |
+| **GitHub Automation** | PRs, issues, releases, CI/CD | gh CLI, git |
+| **Daily Briefing** | Morning news + weather + crypto digest | cron, web, crypto |
+| **Content Writer** | Blog posts, social media, newsletters | claude, markdown |
+
+## 🤖 How It Works
+
+Each skill is a complete `SKILL.md` file that Hermes loads on demand. No API keys, no extra services — just pure Hermes-native capabilities.
+
+## 💰 Pricing
+
+| Option | Price | Payment |
+|--------|-------|---------|
+| **Single License** | 0.01 SOL (~$10) | Solana blockchain |
+| **Developer License** | 0.05 SOL (~$50) | Solana + Support |
+| **Commercial License** | 0.1 SOL (~$100) | Full rights + Setup |
+
+## 🔧 Quick Install
 
 ```bash
-git clone https://github.com/Dev-Herni/hermes-skill-pack.git
-cd hermes-skill-pack
-chmod +x install.sh && ./install.sh
+# 1. Load a skill
+hermes skill load web-research-agent
+
+# 2. Or install the full pack
+gh repo clone Dev-Herni/hermes-skill-pack ~/hermes-skill-pack
+
+# 3. Set a cron job
+hermes cron create --schedule "0 8 * * *" --skill daily-briefing
 ```
 
-Then in any Hermes conversation:
+## 📦 Contents
 
 ```
-/load smart-scheduler    # Start scheduling
-/load web-research-agent  # Start researching
+hermes-skill-pack/
+├── README.md
+├── skills/
+│   ├── smart-scheduler/SKILL.md
+│   ├── web-research-agent/SKILL.md
+│   ├── github-automation/SKILL.md
+│   ├── daily-briefing/SKILL.md
+│   └── content-writer/SKILL.md
+└── license/
+    └── LICENSE.md
 ```
 
-> **No dependencies?** Works with any Hermes Agent installation. Linux, macOS, WSL.
+## 🔐 Security
+
+- **No API keys required** — uses Hermes' built-in tools
+- **No external calls** — everything runs locally
+- **Auditable** — every skill is plain markdown, inspect before loading
+
+## 📬 Contact
+
+hermes-business@agentmail.to
 
 ---
 
-## 🎯 What Can You Do With These Skills?
-
-**"Set up a daily briefing at 8 AM with weather and top tech news"**
-→ Smart Scheduler + Daily Briefing
-
-**"Research the latest AI agents papers and save them to my brain"**
-→ Web Research Agent + Daily Briefing
-
-**"Auto-label all new issues in my GitHub repos"**
-→ GitHub Automation
-
-**"Write a Twitter thread about what I learned this week"**
-→ Content Writer
-
----
-
-## 🛒 Buy Now
-
-| | Skill Pack |
-|---|---|
-| **Price** | **0.05 SOL** (~$8 USD) |
-| Delivery | Instant — download after payment |
-| License | Personal use (1 user) |
-| Updates | Free for life |
-
-### How to Buy
-
-**1.** Send **exactly 0.05 SOL** to:
-
-```
-4EnixhxrxT4RE3AyK5tzxDdYZic8jv756CLS3cKZW2AU
-```
-
-**2.** Email the transaction signature to **hermes-business@agentmail.to**
-
-**3.** You'll receive the download link within minutes ⚡
-
-> **Network:** Solana (mainnet-beta) — works from Phantom, Solflare, Backpack, any Solana wallet.
-
----
-
-## 📖 Skills Deep Dive
-
-### Smart Scheduler
-Automate any recurring task. Comes with 3 pre-built templates:
-- `daily-briefing` — 8 AM news + weather
-- `website-uptime` — Check every 30 minutes
-- `weekly-digest` — Monday morning summary
-
-### Web Research Agent
-Full autonomous research pipeline:
-1. **Search** — multiple sources, configurable depth
-2. **Extract** — full content from each source
-3. **Synthesize** — structured markdown with citations
-4. **Save** — to your knowledge base or a file
-
-### Daily Briefing
-Your morning AI newspaper:
-- 🌤️ Weather (free Open-Meteo API)
-- 📰 Top headlines (your chosen topics)
-- 📅 Calendar events
-- 💡 AI tip of the day
-
-### GitHub Automation
-Stop triaging issues manually:
-- Auto-label by keyword regex
-- Generate release notes from commits
-- Sync milestones across repos
-- Smart reviewer assignment
-
-### Content Writer
-Create content at scale:
-- SEO-optimized headlines
-- Multiple formats: X threads, blog posts, newsletters
-- Tone customization (professional, casual, spicy)
-- Auto-publish pipeline
-
----
-
-## ❓ FAQ
-
-**Q: Do I need to know how to code?**
-A: No. Just run the install command. The skills work out of the box.
-
-**Q: Can I modify the skills?**
-A: Yes! Skills are plain markdown + optional scripts. Edit them anytime.
-
-**Q: Do I need an API key?**
-A: Some skills use free APIs (Open-Meteo for weather). No paid keys needed.
-
-**Q: Is there a money-back guarantee?**
-A: Digital goods are non-refundable. Email support if something doesn't work.
-
-**Q: I don't have Solana. Can I pay with fiat?**
-A: Contact hermes-business@agentmail.to for PayPal/Stripe options.
-
----
-
-## 📬 Support
-
-- **Email:** hermes-business@agentmail.to
-- **GitHub Issues:** [Open an issue](https://github.com/Dev-Herni/hermes-skill-pack/issues)
-
----
-
-*Built for [Hermes Agent](https://hermes-agent.nousresearch.com). Works with OpenClaw, Claude Code, and any skill-compatible agent framework.*
+*Built with Hermes Agent v0.14.0 — Your autonomous AI operator*
