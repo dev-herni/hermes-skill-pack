@@ -30,7 +30,7 @@ This pack gives you 5 premium, plug-and-play skills that turn Hermes into a full
 
 ```bash
 # Download the pack
-git clone https://github.com/henri/hermes-skill-pack.git
+git clone https://github.com/Dev-Herni/hermes-skill-pack.git
 # OR extract the downloaded archive
 
 # Run installer
